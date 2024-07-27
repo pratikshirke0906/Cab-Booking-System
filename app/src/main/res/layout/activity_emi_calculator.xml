@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/emicalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="EMI CALCULATOR"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/loanAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emicalc"
+        android:textColor="@color/white"
+        android:layout_margin="30dp"
+        android:hint="Loan Amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/interestRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loanAmountEditText"
+        android:layout_margin="25dp"
+        android:textColor="@color/white"
+        android:hint="Interest Rate (%)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/tenureEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interestRateEditText"
+        android:layout_margin="25dp"
+        android:textColor="@color/white"
+        android:hint="Loan Tenure (Months)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tenureEditText"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="Calculate EMI" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Result"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>

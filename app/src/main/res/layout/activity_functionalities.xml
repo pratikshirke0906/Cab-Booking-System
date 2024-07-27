@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".FunctionalityListActivity">
+
+    <TextView
+        android:id="@+id/appNameFunctionalities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="CalcKit"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/areaCalculatorButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scientificCalculatorButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:text="Area Calculator" />
+
+    <Button
+        android:id="@+id/bmiCalculatorButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/areaCalculatorButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="BMI Calculator" />
+
+    <Button
+        android:id="@+id/discountCalculatorButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bmiCalculatorButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="Discount Calculator" />
+
+    <Button
+        android:id="@+id/emiCalculatorButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discountCalculatorButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="EMI Calculator" />
+
+    <Button
+        android:id="@+id/gstCalculatorButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emiCalculatorButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="GST Calculator" />
+
+    <Button
+        android:id="@+id/fdCalculatorButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gstCalculatorButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="FD Calculator" />
+
+    <Button
+        android:id="@+id/ppfCalculatorButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_below="@id/fdCalculatorButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="PPF Calculator" />
+
+    <Button
+        android:id="@+id/scientificCalculatorButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setOperationsButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:text="Scientific Calculator" />
+
+    <Button
+        android:id="@+id/setOperationsButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_below="@id/appNameFunctionalities"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Set Operations" />
+
+</RelativeLayout>

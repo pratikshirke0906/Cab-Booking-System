@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5">
+
+    <TextView
+        android:id="@+id/fdcalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="BMI CALCULATOR"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        style="@style/CalculatorEditText"
+        android:layout_below="@id/fdcalc"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter height (in centimeters)" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        style="@style/CalculatorEditText"
+        android:layout_below="@id/heightEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter weight (in kilograms)" />
+
+    <Button
+        android:id="@+id/calculateBMIButton"
+        style="@style/CalculatorButton"
+        android:layout_below="@id/weightEditText"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:text="Calculate BMI" />
+
+    <TextView
+        android:id="@+id/bmiResultTextView"
+        style="@style/CalculatorResult"
+        android:layout_below="@id/calculateBMIButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:hint="BMI :)" />
+</RelativeLayout>

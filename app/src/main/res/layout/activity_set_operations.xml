@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".SetOperationsActivity">
+
+    <TextView
+        android:id="@+id/setOpsTitle"
+        style="@style/CalculatorTitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:text="SET OPERATIONS" />
+
+    <EditText
+        android:id="@+id/set1EditText"
+        style="@style/CalculatorEditText"
+        android:layout_below="@id/setOpsTitle"
+        android:textColor="@color/white"
+        android:hint="Set 1 (comma-separated integers)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/set2EditText"
+        style="@style/CalculatorEditText"
+        android:layout_below="@id/set1EditText"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/white"
+        android:hint="Set 2 (comma-separated integers)"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/unionButton"
+        style="@style/CalculatorButton"
+        android:layout_below="@id/set2EditText"
+        android:layout_marginTop="15dp"
+        android:width="250dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:text="Union" />
+
+    <Button
+        android:id="@+id/intersectionButton"
+        style="@style/CalculatorButton"
+        android:layout_below="@id/unionButton"
+        android:layout_marginTop="20dp"
+        android:width="250dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:text="Intersection" />
+
+    <Button
+        android:id="@+id/differenceButton"
+        style="@style/CalculatorButton"
+        android:layout_below="@id/intersectionButton"
+        android:layout_marginTop="20dp"
+        android:width="250dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:text="Difference" />
+
+    <Button
+        android:id="@+id/cartesianButton"
+        style="@style/CalculatorButton"
+        android:layout_below="@id/differenceButton"
+        android:layout_marginTop="20dp"
+        android:width="250dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:text="Cartesian Product" />
+
+    <Button
+        android:id="@+id/cardinalityButton"
+        style="@style/CalculatorButton"
+        android:layout_below="@id/cartesianButton"
+        android:layout_marginTop="20dp"
+        android:width="250dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:text="Cardinality" />
+
+    <Button
+        android:id="@+id/powerSetButton"
+        style="@style/CalculatorButton"
+        android:layout_below="@id/cardinalityButton"
+        android:layout_marginTop="20dp"
+        android:width="250dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:text="Power Set" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        style="@style/CalculatorResult"
+        android:layout_below="@id/powerSetButton"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Result" />
+</RelativeLayout>
